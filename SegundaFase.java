@@ -18,7 +18,7 @@ public class SegundaFase {
 
         if (regiao.equals("1")) {
             System.out.println("Você escolheu a região: Sul.");
-        } else if (regiao.equals("2")) {
+        } else if  {
             System.out.println("Você escolheu a região: Sudeste.");
         } else {
             while (true) {
@@ -68,9 +68,9 @@ public class SegundaFase {
                         indiceClube += 1;
                     }
                     System.out.print("\nEscolha o time de sua preferência: ");
-                    String escolha = sc.nextLine();
+                    String escolha = sc.next();sc.next();
                     while (true) {
-                        if (escolha.equals("1") || escolha.equals("2")) {
+                        
                             break;
                         } else {
                             System.out.print("Opção inválida. Digite novamente: ");
@@ -91,7 +91,7 @@ public class SegundaFase {
                             break;
                         } else {
                             System.out.println("Opção inválida. Digite novamente: ");
-                            escolha = sc.nextLine();
+                            
                         }
                     }
                     System.out.printf("Parabéns! Você se tornou o novo jogador do %s.", clubesSudeste[Integer.parseInt(escolha) - 1]);
